@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+   <div class="form">
+     <div class="form__head">
+       <span>Задать вопрос<span>
+     </div>
+      <form id="form" method="post" action="https://digital-spectr.com/ac/academy.php">
+        <div class="form__input-labels">
+            <input type="name" name="name" class="form__input-labels__input form__input-labels__input_name" placeholder="Фамилия Имя Отчество *" autocomplete="off">
+            <input type="phone" name="phone" class="form__input-labels__input form__input-labels__input_phone" placeholder="Телефон *">
+            <input type="email" name="email" class="form__input-labels__input form__input-labels__input_email" placeholder="Email">
+            <input type="submit" class="form__input-labels__input form__input-labels__input_send" value="ОТПРАВИТЬ ЗАПРОС">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

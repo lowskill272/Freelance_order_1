@@ -1,0 +1,98 @@
+@mixin placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #D0C9D6;
+}
+
+.container{
+  min-width: 481px;
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form{
+  min-width: 481px;
+  width: 481px;
+  height: 392px;
+  background: #F7F5F9;
+  border-radius: 12px;
+}
+
+.form__head{
+  margin: 40px 0 25px 40px;
+
+  span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: #3B3D43;
+  }
+}
+
+.form__input-labels{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.form__input-labels__input{
+  cursor: pointer;
+  margin-bottom: 25px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  width: 401px;
+  height: 48px;
+  border: 0;
+  padding: .375rem .75rem;
+
+  &::-webkit-input-placeholder {@include placeholder;}
+  &::-moz-placeholder          {@include placeholder;}/* Firefox 19+ */
+  &:-moz-placeholder           {@include placeholder;}/* Firefox 18- */
+  &:-ms-input-placeholder      {@include placeholder;}
+
+  &:hover{
+    border: 1px solid #c3c9db;
+  }
+
+  &:focus{
+    border: 1px solid #8288a2;
+  }
+}
+
+.form__input-labels__input_send{
+  background: #6979F8;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  margin: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(roboto/roboto.ttf);
+}
+
+@media only screen and (max-width: 520px) {
+  body {
+    overflow-x: scroll;
+  }
+}
